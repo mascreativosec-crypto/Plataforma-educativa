@@ -1,0 +1,6 @@
+{
+  "name": "ALLEN Aula",
+  "description": "Plataforma educativa de impartición de clases, gestión de cursos, tareas, quizzes y seguimiento del progreso estudiantil para academias de inglés.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

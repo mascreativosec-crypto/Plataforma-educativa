@@ -1,0 +1,1424 @@
+ALLEN AULA — PROMPT MAESTRO DE DESARROLLO, REDISEÑO Y EVOLUCIÓN DE LA
+PLATAFORMA LMS
+
+ROL Y ESPECIALIZACIÓN
+
+Actúa como un equipo multidisciplinario senior integrado por:
+
+-   Arquitectos de software especializados en plataformas LMS.
+-   Desarrolladores Full Stack.
+-   Especialistas en Moodle y sistemas de gestión educativa.
+-   Diseñadores UX/UI especializados en productos SaaS.
+-   Especialistas en gamificación educativa.
+-   Expertos en evaluación académica y construcción de exámenes.
+-   Especialistas en inteligencia artificial aplicada a la educación.
+-   Expertos en bases de datos, seguridad y arquitectura escalable.
+
+Tu misión es analizar, mejorar y evolucionar mi proyecto actual
+denominado ALLEN Aula.
+
+Quiero convertirlo en una plataforma educativa integral, moderna,
+interactiva, intuitiva y altamente funcional, especializada en la
+enseñanza del idioma inglés.
+
+La plataforma debe combinar:
+
+1.  La estructura académica, organización y herramientas de Moodle.
+2.  La gamificación, los retos, puntos, recompensas y canjes de QuestIA.
+3.  Una experiencia de usuario moderna, profesional y atractiva.
+4.  Herramientas específicas para enseñar y evaluar Reading, Listening,
+    Writing y Speaking.
+5.  Inteligencia artificial para facilitar el trabajo docente y mejorar
+    el aprendizaje del estudiante.
+
+No quiero una simple plataforma donde el docente suba archivos y el
+estudiante los descargue.
+
+Quiero construir un ecosistema educativo en el que el estudiante
+aprenda, practique, participe, reciba retroalimentación, vea su progreso
+y tenga motivos para regresar constantemente.
+
+------------------------------------------------------------------------
+
+1.  REGLA FUNDAMENTAL: ANALIZAR Y CONSERVAR EL PROYECTO EXISTENTE
+
+Antes de realizar cualquier modificación, analiza completamente el
+proyecto actual.
+
+Identifica:
+
+-   Arquitectura existente.
+-   Tecnologías utilizadas.
+-   Estructura de carpetas.
+-   Componentes.
+-   Rutas.
+-   Base de datos.
+-   Módulos implementados.
+-   Funcionalidades operativas.
+-   Integraciones existentes.
+-   Sistema de autenticación.
+-   Roles y permisos.
+-   Componentes visuales reutilizables.
+
+REGLAS OBLIGATORIAS:
+
+1.  No comenzar un proyecto nuevo.
+2.  No reemplazar la arquitectura existente sin una justificación
+    técnica.
+3.  No eliminar funcionalidades que ya funcionan.
+4.  No borrar información ni registros existentes.
+5.  No modificar innecesariamente la estructura de datos.
+6.  No cambiar la identidad visual institucional.
+7.  No duplicar módulos ni crear rutas innecesarias.
+8.  No sustituir funcionalidades reales por interfaces visuales
+    simuladas.
+9.  No utilizar información ficticia como si fueran registros reales.
+10. No modificar componentes que no estén relacionados con el trabajo
+    solicitado.
+
+Si necesitas modificar una estructura existente, primero analiza sus
+dependencias y conserva la compatibilidad.
+
+Trabaja de manera incremental, verificando cada implementación.
+
+IMPORTANTE: Si una funcionalidad requiere servicios de backend,
+almacenamiento, integraciones o configuraciones adicionales, identifica
+esos requisitos. No declares una funcionalidad como terminada si
+solamente has construido su interfaz.
+
+------------------------------------------------------------------------
+
+2.  IDENTIDAD VISUAL DE ALLEN AULA
+
+Utilizar exclusivamente la siguiente paleta institucional:
+
+-   Rojo institucional: #cf080d
+-   Azul marino: #011f52
+-   Gris: #d9d9d9
+-   Blanco: #ffffff
+
+Aplicación de colores
+
+AZUL #011f52: - Barra superior. - Navegación principal. - Encabezados. -
+Iconos principales. - Elementos de identidad institucional.
+
+ROJO #cf080d: - Botones de acciones principales. - Indicadores
+importantes. - Estados que requieren atención. - Elementos destacados. -
+Barras de progreso seleccionadas.
+
+GRIS #d9d9d9: - Fondos secundarios. - Bordes. - Separadores. - Elementos
+deshabilitados.
+
+BLANCO #ffffff: - Fondo de trabajo. - Tarjetas. - Formularios. - Paneles
+de contenido.
+
+Estilo de diseño
+
+Quiero una interfaz:
+
+-   Moderna.
+-   Minimalista.
+-   Profesional.
+-   Elegante.
+-   Intuitiva.
+-   Limpia.
+-   Responsive.
+-   Visualmente atractiva.
+
+Utiliza: - Bordes suaves. - Sombras discretas. - Espaciados
+equilibrados. - Tipografía moderna. - Iconografía uniforme. -
+Microinteracciones. - Animaciones sutiles. - Indicadores visuales de
+progreso. - Estados de carga y confirmaciones.
+
+Evita una apariencia infantil, saturada, excesivamente colorida o
+demasiado corporativa.
+
+No copies los colores verdes ni la identidad gráfica de las capturas de
+Moodle que he proporcionado.
+
+Las imágenes adjuntas son referencias de funcionalidad, distribución y
+navegación, no referencias de identidad visual.
+
+------------------------------------------------------------------------
+
+3.  ESTRUCTURA GENERAL DE NAVEGACIÓN
+
+Quiero conservar el menú principal que actualmente he diseñado para
+ALLEN Aula.
+
+No lo reemplaces por una estructura diferente.
+
+El menú debe funcionar mediante una navegación de dos niveles:
+navegación general y navegación contextual del curso.
+
+3.1. MENÚ PRINCIPAL
+
+Organizar los módulos de esta manera:
+
+MENÚ PRINCIPAL
+
+1.  Dashboard.
+2.  Mis cursos.
+3.  Calendario.
+4.  Actividades.
+5.  Entregas.
+6.  Evaluaciones.
+7.  Calificaciones.
+8.  Participantes.
+9.  Asistencia.
+10. Anuncios.
+
+APRENDIZAJE Y MOTIVACIÓN
+
+11. Gamificación.
+12. Tienda de canjes.
+13. Reportes.
+
+PERSONAL
+
+14. Mensajes.
+15. Notificaciones.
+16. Configuración.
+
+Cada módulo debe tener su correspondiente icono, ruta, estado activo y
+funcionalidad.
+
+El menú debe permitir:
+
+-   Expandirse y contraerse.
+-   Mostrar indicadores de notificaciones.
+-   Mostrar cantidades de actividades pendientes.
+-   Mantener visible el módulo seleccionado.
+-   Recordar el contexto de navegación.
+-   Adaptarse a dispositivos móviles.
+
+3.2. NAVEGACIÓN CONTEXTUAL DEL CURSO
+
+Cuando el docente o estudiante ingrese a un curso, debe aparecer una
+navegación específica del curso.
+
+No quiero dos menús independientes que compitan entre sí.
+
+El menú general debe mantenerse accesible y el menú del curso debe
+aparecer como una navegación contextual.
+
+Dentro de cada curso incluir:
+
+1.  Resumen.
+2.  Participantes.
+3.  Unidades y lecciones.
+4.  Actividades.
+5.  Tareas.
+6.  Entregas.
+7.  Exámenes.
+8.  Banco de preguntas.
+9.  Calificaciones.
+10. Asistencia.
+11. Anuncios.
+12. Informes.
+13. Configuración.
+
+La navegación debe indicar claramente el curso seleccionado y la sección
+en la que se encuentra el usuario.
+
+Debe existir una forma sencilla de regresar a Mis cursos sin perder el
+contexto.
+
+------------------------------------------------------------------------
+
+4.  ESTRUCTURA INTERNA DE LOS CURSOS — EXPERIENCIA MOODLE
+
+Esta funcionalidad es prioritaria.
+
+Utiliza las capturas de Moodle proporcionadas como referencia para
+construir la navegación académica.
+
+Quiero reproducir su lógica de organización de unidades, lecciones y
+recursos, pero con un diseño más moderno.
+
+4.1. DISTRIBUCIÓN DE LA PANTALLA
+
+Implementar una estructura de cuatro áreas:
+
+A. BARRA SUPERIOR
+
+Mostrar: - Logo y nombre ALLEN Aula. - Accesos generales. -
+Notificaciones. - Mensajes. - Perfil del usuario. - Menú de usuario.
+
+B. PANEL IZQUIERDO
+
+Mostrar el índice del curso:
+
+-   Unidades.
+-   Lecciones.
+-   Recursos.
+-   Actividades.
+-   Tareas.
+-   Exámenes.
+
+Permitir expandir y contraer unidades.
+
+Mostrar indicadores de progreso y estados.
+
+C. ÁREA CENTRAL
+
+Mostrar el contenido seleccionado:
+
+-   Texto.
+-   Imágenes.
+-   Videos.
+-   Audios.
+-   Documentos.
+-   Actividades.
+-   Cuestionarios.
+-   Tareas.
+-   Evaluaciones.
+
+D. PANEL DERECHO
+
+Mostrar bloques informativos:
+
+-   Próximos eventos.
+-   Calendario.
+-   Tareas pendientes.
+-   Anuncios recientes.
+-   Actividad reciente.
+-   Progreso del curso.
+-   Usuarios en línea, cuando exista seguimiento real de presencia.
+
+Los paneles izquierdo y derecho deben poder contraerse para ampliar el
+espacio central.
+
+4.2. ORGANIZACIÓN DE UNIDADES Y LECCIONES
+
+El docente debe poder construir cursos con esta estructura:
+
+CURSO: - Unidad 1. - Lección 1.1. - Lección 1.2. - Lección 1.3. -
+Actividad. - Tarea. - Evaluación. - Unidad 2. - Lección 2.1. - Lección
+2.2. - Actividad. - Evaluación. - Unidad 3. - Lecciones. - Recursos. -
+Actividades.
+
+Cada unidad debe tener:
+
+-   Nombre.
+-   Descripción.
+-   Imagen opcional.
+-   Objetivos de aprendizaje.
+-   Contenido.
+-   Lecciones.
+-   Actividades.
+-   Criterios de finalización.
+
+Cada lección debe permitir:
+
+-   Título.
+-   Descripción.
+-   Contenido enriquecido.
+-   Imágenes.
+-   Videos.
+-   Audios.
+-   Documentos.
+-   Enlaces externos.
+-   Actividades interactivas.
+-   Tareas.
+-   Exámenes.
+
+El docente debe poder:
+
+-   Crear.
+-   Editar.
+-   Duplicar.
+-   Reordenar mediante arrastrar y soltar.
+-   Ocultar.
+-   Publicar.
+-   Programar.
+-   Eliminar con confirmación.
+
+4.3. NAVEGACIÓN DEL ESTUDIANTE
+
+El estudiante debe poder ingresar a cualquier lección disponible.
+
+Al abrir una lección:
+
+-   Mostrar su contenido.
+-   Registrar su progreso.
+-   Identificar si está completada.
+-   Permitir regresar al índice.
+-   Mostrar botones anterior y siguiente.
+-   Mostrar actividades asociadas.
+
+Incluir indicadores:
+
+-   Pendiente.
+-   En progreso.
+-   Completada.
+-   Entregada.
+-   Pendiente de calificación.
+
+El docente debe poder configurar condiciones de finalización.
+
+------------------------------------------------------------------------
+
+5.  DASHBOARD DEL DOCENTE
+
+Crear un panel de control profesional que muestre información real y
+actualizada.
+
+Incluir:
+
+-   Cursos activos.
+-   Estudiantes matriculados.
+-   Entregas pendientes de revisión.
+-   Exámenes próximos.
+-   Actividades pendientes.
+-   Asistencia.
+-   Promedio académico.
+-   Participación.
+-   Estudiantes con retrasos.
+-   Últimas actividades.
+-   Próximos eventos.
+
+Incluir gráficos y estadísticas con filtros por:
+
+-   Curso.
+-   Unidad.
+-   Estudiante.
+-   Período.
+-   Tipo de actividad.
+
+Agregar accesos rápidos:
+
+-   Crear curso.
+-   Crear unidad.
+-   Crear lección.
+-   Crear tarea.
+-   Crear examen.
+-   Crear actividad.
+-   Publicar anuncio.
+-   Registrar asistencia.
+-   Revisar entregas.
+
+------------------------------------------------------------------------
+
+6.  DASHBOARD DEL ESTUDIANTE
+
+El estudiante debe tener una experiencia diferente a la del docente.
+
+Mostrar:
+
+-   Saludo personalizado.
+-   Mis cursos.
+-   Progreso académico.
+-   Próximas actividades.
+-   Tareas pendientes.
+-   Exámenes próximos.
+-   Últimas calificaciones.
+-   Calendario.
+-   Puntos acumulados.
+-   Nivel actual.
+-   Insignias.
+-   Racha de aprendizaje.
+-   Recompensas disponibles.
+
+Crear una experiencia motivadora que permita al estudiante visualizar su
+avance.
+
+Incluir recomendaciones de estudio y objetivos semanales.
+
+El estudiante debe identificar inmediatamente qué tiene pendiente y qué
+debe realizar a continuación.
+
+------------------------------------------------------------------------
+
+7.  MÓDULO DE ACTIVIDADES
+
+Crear un módulo centralizado donde el docente pueda administrar todas
+las actividades.
+
+Permitir crear:
+
+-   Ejercicios.
+-   Prácticas.
+-   Actividades interactivas.
+-   Foros.
+-   Lecturas.
+-   Actividades de Listening.
+-   Actividades de Speaking.
+-   Actividades de Writing.
+-   Actividades de Reading.
+-   Retos.
+-   Cuestionarios.
+-   Simulacros.
+
+Cada actividad debe poder asociarse a:
+
+-   Curso.
+-   Unidad.
+-   Lección.
+-   Grupo.
+-   Fecha.
+-   Puntuación.
+-   Condiciones de finalización.
+
+El estudiante debe poder consultar las actividades desde el curso y
+desde su módulo general de actividades.
+
+------------------------------------------------------------------------
+
+8.  SISTEMA COMPLETO DE TAREAS
+
+El docente debe poder crear tareas desde el curso o desde el módulo
+general.
+
+Cada tarea debe permitir configurar:
+
+-   Nombre.
+-   Descripción.
+-   Instrucciones.
+-   Curso.
+-   Unidad.
+-   Lección.
+-   Fecha de apertura.
+-   Fecha límite.
+-   Hora límite.
+-   Puntuación.
+-   Rúbrica.
+-   Número de intentos.
+-   Formatos permitidos.
+-   Entrega individual o grupal.
+-   Entrega tardía.
+-   Retroalimentación.
+-   Archivos adjuntos.
+
+8.1. FORMATOS DE ENTREGA
+
+El estudiante debe poder entregar:
+
+-   PDF.
+-   Word.
+-   Imágenes.
+-   Audios.
+-   Videos.
+-   Texto escrito.
+-   Grabaciones de voz.
+-   Enlaces externos.
+
+8.2. SPEAKING: GRABACIÓN DE AUDIO
+
+Esta funcionalidad es fundamental para ALLEN Aula.
+
+Permitir que el estudiante grabe su voz directamente desde la
+plataforma.
+
+Flujo:
+
+1.  El docente crea una actividad de Speaking.
+2.  Escribe las instrucciones.
+3.  Puede incorporar una pregunta, imagen, texto o audio de referencia.
+4.  Configura el tiempo máximo de grabación.
+5.  Configura los intentos permitidos.
+6.  El estudiante abre la actividad.
+7.  Graba su respuesta.
+8.  Puede escucharla antes de enviarla.
+9.  Puede volver a grabar si tiene intentos disponibles.
+10. Envía el audio.
+11. El docente recibe la grabación.
+12. El docente reproduce el audio y lo califica.
+
+El docente debe poder:
+
+-   Escuchar el audio.
+-   Descargarlo.
+-   Reproducirlo.
+-   Añadir comentarios.
+-   Utilizar rúbricas.
+-   Asignar calificaciones.
+-   Enviar retroalimentación escrita.
+-   Enviar retroalimentación mediante audio.
+
+Criterios de evaluación configurables:
+
+-   Pronunciación.
+-   Fluidez.
+-   Vocabulario.
+-   Gramática.
+-   Comprensión.
+-   Coherencia.
+
+No obligar al estudiante a utilizar aplicaciones externas.
+
+La grabación debe funcionar en navegadores y dispositivos compatibles,
+solicitando los permisos necesarios para utilizar el micrófono.
+
+------------------------------------------------------------------------
+
+9.  BANDEJA GENERAL DE ENTREGAS
+
+Crear un módulo independiente denominado ENTREGAS.
+
+Debe centralizar todas las entregas de todos los cursos del docente.
+
+No quiero que el docente tenga que ingresar a cada curso para revisar
+las tareas.
+
+Mostrar una tabla con:
+
+-   Estudiante.
+-   Curso.
+-   Unidad.
+-   Actividad.
+-   Tipo de entrega.
+-   Fecha de entrega.
+-   Fecha límite.
+-   Estado.
+-   Calificación.
+-   Acción para revisar.
+
+Incluir filtros:
+
+-   Todas.
+-   Pendientes de revisión.
+-   Calificadas.
+-   Entregadas a tiempo.
+-   Entregadas tarde.
+-   Sin entregar.
+-   Por curso.
+-   Por estudiante.
+-   Por fecha.
+
+Al abrir una entrega, mostrar un espacio de corrección.
+
+Permitir:
+
+-   Visualizar documentos.
+-   Descargar archivos.
+-   Reproducir audios.
+-   Reproducir videos.
+-   Leer respuestas.
+-   Aplicar rúbricas.
+-   Asignar calificaciones.
+-   Escribir observaciones.
+-   Enviar retroalimentación.
+
+Incluir navegación entre entregas para facilitar el trabajo docente.
+
+Los cambios de estado deben actualizarse automáticamente.
+
+------------------------------------------------------------------------
+
+10. SISTEMA AVANZADO DE EXÁMENES Y PRUEBAS
+
+Este es uno de los módulos más importantes.
+
+Quiero que el docente tenga herramientas similares a Moodle para crear,
+administrar, configurar y calificar pruebas.
+
+No construir un simple formulario de preguntas.
+
+Desarrollar un constructor completo de evaluaciones.
+
+10.1. CREACIÓN DE EXÁMENES
+
+Permitir configurar:
+
+-   Nombre.
+-   Descripción.
+-   Curso.
+-   Unidad.
+-   Lección.
+-   Categoría.
+-   Fecha de apertura.
+-   Fecha de cierre.
+-   Duración.
+-   Número de intentos.
+-   Calificación máxima.
+-   Nota mínima para aprobar.
+-   Puntuación por pregunta.
+-   Orden aleatorio de preguntas.
+-   Orden aleatorio de respuestas.
+-   Retroalimentación.
+-   Restricciones de acceso.
+-   Visibilidad de resultados.
+-   Configuración de revisión.
+-   Banco de preguntas.
+
+Permitir guardar como borrador, previsualizar, publicar, duplicar y
+editar.
+
+10.2. TIPOS DE PREGUNTAS
+
+Implementar los siguientes tipos:
+
+1.  Opción múltiple con una respuesta correcta.
+2.  Opción múltiple con varias respuestas correctas.
+3.  Verdadero o falso.
+4.  Respuesta corta.
+5.  Completar espacios en blanco.
+6.  Relacionar columnas.
+7.  Arrastrar y soltar.
+8.  Ordenar palabras.
+9.  Ordenar oraciones.
+10. Preguntas de desarrollo.
+11. Respuesta numérica.
+12. Selección de imágenes.
+13. Preguntas con audio.
+14. Preguntas con video.
+15. Comprensión auditiva.
+16. Grabación de voz.
+17. Preguntas de Speaking.
+
+Cada formato debe tener un editor específico.
+
+Permitir configurar:
+
+-   Enunciado.
+-   Respuestas.
+-   Respuesta correcta.
+-   Puntuación.
+-   Retroalimentación.
+-   Imagen.
+-   Audio.
+-   Video.
+-   Dificultad.
+
+10.3. EXPERIENCIA DE CREACIÓN PARA EL DOCENTE
+
+Crear una interfaz de construcción de exámenes intuitiva.
+
+El docente debe poder:
+
+-   Agregar preguntas.
+-   Editar preguntas.
+-   Duplicar preguntas.
+-   Eliminar preguntas.
+-   Reordenar preguntas.
+-   Asignar puntuaciones.
+-   Previsualizar el examen.
+-   Guardar cambios.
+-   Seleccionar preguntas del banco.
+
+Mostrar una vista previa de cómo verá el estudiante cada pregunta.
+
+10.4. EXPERIENCIA DEL ESTUDIANTE
+
+Mostrar:
+
+-   Instrucciones.
+-   Temporizador.
+-   Barra de progreso.
+-   Número de pregunta.
+-   Navegación entre preguntas.
+-   Indicadores de preguntas respondidas.
+-   Guardado automático.
+-   Confirmación antes de finalizar.
+-   Pantalla de entrega.
+
+Implementar protección frente a pérdidas accidentales de respuestas.
+
+Permitir recuperar el intento cuando exista una interrupción de
+conexión, respetando las reglas del examen.
+
+10.5. CALIFICACIÓN DE EXÁMENES
+
+Las preguntas objetivas deben calificarse automáticamente.
+
+Las preguntas abiertas y Speaking deben quedar pendientes de revisión
+docente.
+
+El docente debe poder:
+
+-   Revisar respuestas individuales.
+-   Modificar puntuaciones.
+-   Añadir observaciones.
+-   Aplicar rúbricas.
+-   Consultar intentos.
+-   Publicar calificaciones.
+-   Consultar estadísticas.
+
+------------------------------------------------------------------------
+
+11. BANCO DE PREGUNTAS
+
+Crear un banco centralizado de preguntas reutilizables.
+
+Organizar por:
+
+-   Curso.
+-   Unidad.
+-   Lección.
+-   Nivel MCER.
+-   Habilidad.
+-   Dificultad.
+-   Categoría.
+
+Permitir:
+
+-   Crear preguntas.
+-   Editar.
+-   Duplicar.
+-   Importar.
+-   Exportar.
+-   Buscar.
+-   Filtrar.
+-   Añadir imágenes.
+-   Añadir audios.
+-   Añadir videos.
+-   Seleccionar aleatoriamente.
+
+Incorporar IA para generar preguntas a partir de textos y documentos
+PDF.
+
+La IA debe proponer enunciados, respuestas correctas, distractores y
+explicaciones.
+
+El docente siempre debe revisar y aprobar las preguntas antes de
+utilizarlas.
+
+------------------------------------------------------------------------
+
+12. LIBRO DE CALIFICACIONES
+
+Crear un módulo de calificaciones inspirado en el sistema de Moodle.
+
+Mostrar una matriz de estudiantes y actividades.
+
+Columnas:
+
+-   Estudiante.
+-   Tareas.
+-   Exámenes.
+-   Speaking.
+-   Listening.
+-   Reading.
+-   Writing.
+-   Participación.
+-   Promedio.
+-   Nota final.
+
+Permitir:
+
+-   Calificación automática.
+-   Calificación manual.
+-   Ponderaciones.
+-   Categorías.
+-   Escalas.
+-   Exenciones.
+-   Modificación de calificaciones.
+-   Historial de cambios.
+-   Observaciones privadas.
+-   Filtros.
+-   Exportación a Excel y PDF.
+
+El docente debe poder configurar los porcentajes de cada categoría.
+
+Las calificaciones deben calcularse automáticamente según las reglas
+configuradas.
+
+Permitir consultar el historial académico individual.
+
+Diferenciar claramente las calificaciones académicas de los puntos de
+gamificación.
+
+------------------------------------------------------------------------
+
+13. GAMIFICACIÓN EDUCATIVA
+
+Quiero incorporar un sistema de gamificación inspirado en QuestIA.
+
+La gamificación debe formar parte de la experiencia y no ser solamente
+un elemento decorativo.
+
+13.1. PUNTOS DE EXPERIENCIA
+
+Crear un sistema de XP configurable.
+
+El estudiante puede ganar puntos por:
+
+-   Completar lecciones.
+-   Entregar tareas.
+-   Participar.
+-   Aprobar exámenes.
+-   Mejorar calificaciones.
+-   Completar unidades.
+-   Cumplir objetivos.
+-   Mantener rachas de aprendizaje.
+-   Participar en retos.
+
+El administrador debe poder configurar las reglas.
+
+Evitar duplicaciones y asignaciones indebidas de puntos.
+
+13.2. NIVELES
+
+Crear niveles de aprendizaje.
+
+Ejemplos:
+
+-   Beginner Explorer.
+-   Grammar Master.
+-   Listening Champion.
+-   Speaking Star.
+-   Writing Expert.
+-   Cambridge Achiever.
+
+Mostrar:
+
+-   Nivel actual.
+-   Puntos acumulados.
+-   Puntos necesarios para avanzar.
+-   Progreso.
+-   Logros desbloqueados.
+
+13.3. INSIGNIAS
+
+Crear insignias por logros académicos y participación.
+
+Ejemplos:
+
+-   Primera lección completada.
+-   Primera tarea entregada.
+-   Diez días de aprendizaje.
+-   Excelente Speaking.
+-   Unidad completada.
+-   Simulacro aprobado.
+
+Permitir que el administrador cree insignias personalizadas.
+
+13.4. RETOS Y MISIONES
+
+Implementar retos individuales y grupales.
+
+Ejemplos:
+
+-   Completa cinco actividades de Listening.
+-   Practica Speaking durante tres días.
+-   Completa una unidad.
+-   Supera un simulacro.
+-   Entrega todas las tareas de la semana.
+
+Mostrar progreso, objetivos y recompensas.
+
+------------------------------------------------------------------------
+
+14. TIENDA DE CANJES Y RECOMPENSAS
+
+Crear una tienda virtual donde los estudiantes puedan canjear los puntos
+acumulados.
+
+Esta funcionalidad debe estar integrada en el menú principal.
+
+FUNCIONES DEL ADMINISTRADOR
+
+Crear recompensas con:
+
+-   Nombre.
+-   Descripción.
+-   Imagen.
+-   Costo en puntos.
+-   Cantidad disponible.
+-   Vigencia.
+-   Condiciones.
+-   Estado.
+
+Ejemplos:
+
+-   Beneficios académicos autorizados.
+-   Acceso a actividades especiales.
+-   Insignias exclusivas.
+-   Premios físicos.
+-   Cupones.
+-   Reconocimientos.
+-   Beneficios institucionales.
+-   Extensiones de tiempo autorizadas.
+
+FUNCIONES DEL ESTUDIANTE
+
+Permitir:
+
+-   Consultar saldo.
+-   Visualizar recompensas.
+-   Consultar requisitos.
+-   Solicitar canjes.
+-   Consultar historial.
+-   Revisar estado de solicitudes.
+
+Estados:
+
+-   Pendiente.
+-   Aprobado.
+-   Rechazado.
+-   Entregado.
+-   Cancelado.
+
+El administrador o personal autorizado debe aprobar los canjes cuando
+corresponda.
+
+Mantener un historial de movimientos.
+
+No permitir saldos negativos ni canjes duplicados.
+
+Los puntos de experiencia y las monedas de canje deben tener reglas
+claras y mantenerse separados de las notas académicas.
+
+------------------------------------------------------------------------
+
+15. CALENDARIO Y PRÓXIMOS EVENTOS
+
+Tomar como referencia el bloque de próximos eventos de Moodle.
+
+Crear un calendario académico real.
+
+Mostrar:
+
+-   Exámenes.
+-   Tareas.
+-   Fechas límite.
+-   Clases.
+-   Sesiones de Speaking.
+-   Eventos.
+-   Actividades programadas.
+
+Implementar vistas:
+
+-   Mensual.
+-   Semanal.
+-   Diaria.
+
+Cada evento debe mostrar:
+
+-   Nombre.
+-   Curso.
+-   Fecha.
+-   Hora.
+-   Tipo.
+-   Estado.
+-   Tiempo restante.
+
+El bloque de próximos eventos debe alimentarse automáticamente de las
+actividades y fechas reales.
+
+Permitir acceder al detalle del evento.
+
+El docente debe poder crear eventos asociados a cursos y grupos.
+
+------------------------------------------------------------------------
+
+16. ASISTENCIA
+
+Crear un sistema de registro de asistencia.
+
+Permitir:
+
+-   Registrar asistencia manual.
+-   Registrar presente.
+-   Registrar ausente.
+-   Registrar atraso.
+-   Registrar justificación.
+-   Consultar historial.
+-   Generar reportes.
+
+Incluir QR como opción futura o configurable.
+
+Mostrar estadísticas por curso, grupo y estudiante.
+
+------------------------------------------------------------------------
+
+17. ANUNCIOS Y COMUNICACIÓN
+
+Crear un módulo de anuncios.
+
+El docente debe poder:
+
+-   Crear anuncios.
+-   Publicar.
+-   Programar.
+-   Editar.
+-   Adjuntar archivos.
+-   Seleccionar destinatarios.
+-   Asociar anuncios a cursos.
+
+El estudiante debe recibir notificaciones de los anuncios relevantes.
+
+Incorporar un sistema de mensajes y notificaciones internas.
+
+------------------------------------------------------------------------
+
+18. COPILOTO DE INTELIGENCIA ARTIFICIAL PARA DOCENTES
+
+Crear un asistente de IA que facilite el trabajo académico.
+
+Debe permitir:
+
+-   Crear preguntas.
+-   Crear exámenes.
+-   Generar tareas.
+-   Elaborar rúbricas.
+-   Crear actividades.
+-   Preparar ejercicios de Reading.
+-   Crear actividades de Listening.
+-   Proponer temas de Writing.
+-   Diseñar ejercicios de Speaking.
+-   Generar explicaciones gramaticales.
+-   Analizar resultados.
+-   Detectar preguntas difíciles.
+-   Sugerir refuerzos.
+
+Permitir cargar documentos PDF y materiales académicos como fuentes.
+
+La IA debe proponer contenidos que el docente pueda editar y aprobar.
+
+No publicar automáticamente contenido generado sin autorización.
+
+------------------------------------------------------------------------
+
+19. ASISTENTE DE APRENDIZAJE PARA ESTUDIANTES
+
+Incorporar un asistente educativo que ayude a resolver dudas.
+
+Debe permitir:
+
+-   Consultar gramática.
+-   Practicar vocabulario.
+-   Resolver dudas.
+-   Realizar ejercicios.
+-   Practicar Reading.
+-   Practicar Listening.
+-   Practicar Writing.
+-   Practicar Speaking.
+-   Recibir explicaciones.
+-   Consultar errores.
+
+Debe adaptarse al nivel de inglés del estudiante.
+
+No debe sustituir las instrucciones del docente ni revelar las
+respuestas de evaluaciones activas.
+
+------------------------------------------------------------------------
+
+20. REPORTES Y ANALÍTICA
+
+Crear un módulo de reportes para docentes y administradores.
+
+Mostrar:
+
+-   Progreso por curso.
+-   Rendimiento individual.
+-   Promedios.
+-   Participación.
+-   Asistencia.
+-   Entregas.
+-   Resultados de exámenes.
+-   Rendimiento por habilidad.
+-   Actividades completadas.
+-   Estudiantes que requieren refuerzo.
+
+Incluir filtros y exportaciones.
+
+Permitir identificar fortalezas y debilidades de cada estudiante.
+
+------------------------------------------------------------------------
+
+21. ROLES Y PERMISOS
+
+Implementar permisos reales por rol.
+
+ADMINISTRADOR
+
+Puede gestionar:
+
+-   Usuarios.
+-   Docentes.
+-   Estudiantes.
+-   Cursos.
+-   Matrículas.
+-   Configuración.
+-   Gamificación.
+-   Canjes.
+-   Reportes generales.
+-   Permisos.
+
+DOCENTE
+
+Puede gestionar:
+
+-   Sus cursos.
+-   Participantes autorizados.
+-   Unidades.
+-   Lecciones.
+-   Actividades.
+-   Tareas.
+-   Exámenes.
+-   Banco de preguntas.
+-   Entregas.
+-   Calificaciones.
+-   Asistencia.
+-   Anuncios.
+-   Reportes de sus cursos.
+
+ESTUDIANTE
+
+Puede acceder a:
+
+-   Sus cursos.
+-   Lecciones.
+-   Recursos.
+-   Actividades.
+-   Tareas.
+-   Entregas propias.
+-   Exámenes.
+-   Calificaciones propias.
+-   Asistencia propia.
+-   Anuncios.
+-   Gamificación.
+-   Tienda de canjes.
+-   Mensajes.
+-   Progreso personal.
+
+Garantizar que un estudiante no pueda acceder a información privada de
+otros estudiantes.
+
+Los permisos deben validarse en backend y no únicamente mediante la
+interfaz.
+
+------------------------------------------------------------------------
+
+22. REQUISITOS TÉCNICOS
+
+Mantener la arquitectura actual siempre que sea viable.
+
+Implementar:
+
+-   Componentes reutilizables.
+-   Separación entre frontend y backend.
+-   Persistencia real.
+-   Validaciones.
+-   Gestión de errores.
+-   Seguridad.
+-   Control de permisos.
+-   Registro de acciones importantes.
+-   Almacenamiento seguro de archivos.
+-   Gestión de audios y videos.
+-   Guardado automático.
+-   Optimización de carga.
+-   Diseño responsive.
+
+Para las evaluaciones, garantizar que las respuestas y los intentos se
+almacenen de forma confiable.
+
+Para las grabaciones, gestionar correctamente los formatos y permisos
+del navegador.
+
+Para las calificaciones, mantener trazabilidad de cambios.
+
+Para los puntos y canjes, implementar un registro transaccional que
+evite duplicaciones y alteraciones indebidas.
+
+No exponer claves API en el frontend.
+
+No utilizar datos de prueba como información productiva.
+
+------------------------------------------------------------------------
+
+23. EXPERIENCIA RESPONSIVE
+
+La plataforma debe funcionar correctamente en:
+
+-   Computadores.
+-   Laptops.
+-   Tablets.
+-   Teléfonos Android.
+-   iPhone.
+
+En escritorio: - Menú lateral. - Contenido central. - Panel derecho
+opcional.
+
+En móvil: - Navegación lateral desplegable. - Índice del curso
+accesible. - Tarjetas adaptables. - Formularios cómodos. - Grabación de
+audio. - Evaluaciones funcionales. - Tablas adaptadas.
+
+Evitar scroll horizontal innecesario.
+
+------------------------------------------------------------------------
+
+24. FASES DE DESARROLLO
+
+No intentes implementar todos los módulos simultáneamente.
+
+Trabaja de forma progresiva.
+
+FASE 1 — IDENTIDAD Y NAVEGACIÓN
+
+-   Analizar el proyecto.
+-   Conservar la estructura existente.
+-   Rediseñar visualmente el menú principal.
+-   Implementar navegación contextual.
+-   Implementar paneles laterales.
+-   Adaptar la experiencia responsive.
+
+FASE 2 — ESTRUCTURA ACADÉMICA
+
+-   Cursos.
+-   Participantes.
+-   Unidades.
+-   Lecciones.
+-   Recursos.
+-   Índice del curso.
+-   Próximos eventos.
+-   Calendario.
+
+FASE 3 — ACTIVIDADES Y TAREAS
+
+-   Crear actividades.
+-   Crear tareas.
+-   Configurar fechas.
+-   Adjuntar recursos.
+-   Entregas.
+-   Bandeja general.
+
+FASE 4 — SPEAKING Y ENTREGAS MULTIMEDIA
+
+-   Grabación de voz.
+-   Reproducción.
+-   Envío de audios.
+-   Calificación.
+-   Rúbricas.
+-   Retroalimentación.
+
+FASE 5 — EVALUACIONES
+
+-   Constructor de exámenes.
+-   Tipos de preguntas.
+-   Banco de preguntas.
+-   Intentos.
+-   Temporizador.
+-   Calificación automática.
+-   Corrección manual.
+
+FASE 6 — CALIFICACIONES
+
+-   Libro de calificaciones.
+-   Ponderaciones.
+-   Categorías.
+-   Promedios.
+-   Historial.
+-   Exportaciones.
+
+FASE 7 — GAMIFICACIÓN
+
+-   XP.
+-   Niveles.
+-   Insignias.
+-   Retos.
+-   Rankings.
+-   Progreso.
+
+FASE 8 — TIENDA DE CANJES
+
+-   Catálogo.
+-   Puntos.
+-   Recompensas.
+-   Solicitudes.
+-   Aprobaciones.
+-   Historial.
+
+FASE 9 — INTELIGENCIA ARTIFICIAL
+
+-   Copiloto docente.
+-   Asistente de aprendizaje.
+-   Generación de preguntas.
+-   Generación de actividades.
+-   Análisis de resultados.
+
+FASE 10 — OPTIMIZACIÓN
+
+-   Pruebas.
+-   Seguridad.
+-   Rendimiento.
+-   Responsive.
+-   Corrección de errores.
+-   Validación de roles.
+
+------------------------------------------------------------------------
+
+25. CRITERIOS DE CALIDAD Y ACEPTACIÓN
+
+Cada módulo debe considerarse terminado solamente cuando:
+
+1.  Su interfaz está implementada.
+2.  Sus botones funcionan.
+3.  Sus formularios validan información.
+4.  Los datos se guardan correctamente.
+5.  Los datos pueden recuperarse.
+6.  Los permisos son correctos.
+7.  Las acciones generan resultados reales.
+8.  Los estados se actualizan.
+9.  Se ha probado el flujo completo.
+10. No se han dañado funcionalidades existentes.
+
+No aceptar implementaciones donde los botones solamente cambian de
+pantalla sin ejecutar la acción correspondiente.
+
+No aceptar funcionalidades simuladas.
+
+Si una función todavía requiere infraestructura adicional, documentar
+claramente lo que falta.
+
+------------------------------------------------------------------------
+
+26. RESULTADO FINAL QUE BUSCO
+
+Quiero que ALLEN Aula se convierta en una plataforma educativa propia,
+robusta y escalable.
+
+Debe tener:
+
+-   La organización académica de Moodle.
+-   La experiencia interactiva y gamificada de QuestIA.
+-   Herramientas completas para docentes.
+-   Una experiencia atractiva para estudiantes.
+-   Evaluaciones profesionales.
+-   Entregas multimedia.
+-   Speaking con grabación de voz.
+-   Calificaciones completas.
+-   Tienda de canjes.
+-   Inteligencia artificial.
+-   Seguimiento del progreso.
+
+La plataforma debe ser suficientemente intuitiva para que un estudiante
+pueda aprender a utilizarla sin necesitar una capacitación extensa.
+
+Debe ser suficientemente potente para que un docente pueda administrar
+sus cursos, crear exámenes, evaluar tareas y analizar resultados desde
+un solo lugar.
+
+No quiero que ALLEN Aula se perciba como una obligación académica.
+
+Quiero que los estudiantes sientan que entrar a la plataforma les aporta
+valor, que están avanzando y que aprender inglés también puede ser una
+experiencia entretenida.
+
+PRIMERA INSTRUCCIÓN DE EJECUCIÓN
+
+Antes de comenzar a modificar el código:
+
+1.  Analiza el proyecto actual.
+2.  Identifica qué módulos ya existen.
+3.  Identifica qué funcionalidades están operativas.
+4.  Identifica qué funcionalidades necesitan mejoras.
+5.  Identifica posibles conflictos de arquitectura.
+6.  Presenta un plan de implementación de la FASE 1.
+
+Después comienza exclusivamente con la FASE 1.
+
+No implementes todas las fases de golpe.
+
+No elimines ni reconstruyas lo que ya funciona.
+
+Conserva el menú principal actual y mejora su integración con la
+navegación académica de Moodle.
+
+Al terminar cada fase, realiza pruebas y presenta un resumen de lo
+implementado, lo que funciona y lo que todavía está pendiente.
+
+PRIORIDAD ABSOLUTA: CALIDAD, FUNCIONALIDAD REAL, EXPERIENCIA DE USUARIO
+Y CONSERVACIÓN DEL PROYECTO EXISTENTE.

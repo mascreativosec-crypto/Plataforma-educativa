@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --allen-navy: #011f52;
+    --allen-navy-hover: #022a6e;
+    --allen-red: #cf080d;
+    --allen-red-hover: #ad060a;
+    --allen-gray: #d9d9d9;
+    --allen-surface: #f5f6f8;
+    --allen-white: #ffffff;
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--allen-surface);
+    color: #011f52;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #011f52;
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-data {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Contenido HTML saneado de lecciones docentes */
+.lesson-prose h2,
+.lesson-prose h3,
+.lesson-prose h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-prose h3 {
+  font-size: 1.125rem;
+}
+
+.lesson-prose p {
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.lesson-prose ul,
+.lesson-prose ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.85rem;
+  color: #334155;
+}
+
+.lesson-prose ul {
+  list-style-type: disc;
+}
+
+.lesson-prose ol {
+  list-style-type: decimal;
+}
+
+.lesson-prose li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.lesson-prose blockquote {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  color: #0f172a;
+  font-style: italic;
+}
+
+.lesson-prose a {
+  color: #011f52;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@keyframes allen-pet-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes allen-pet-celebrate {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-9px) scale(1.05);
+  }
+  60% {
+    transform: translateY(-3px) scale(0.98);
+  }
+}
+
+@keyframes allen-flame-pulse {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1.08) rotate(2deg);
+  }
+}
+
+.animate-pet-float {
+  animation: allen-pet-float 3.2s ease-in-out infinite;
+}
+
+.animate-pet-celebrate {
+  animation: allen-pet-celebrate 0.85s ease-in-out infinite;
+}
+
+.animate-flame-pulse {
+  animation: allen-flame-pulse 1.9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pet-float,
+  .animate-pet-celebrate,
+  .animate-flame-pulse {
+    animation: none;
+  }
+}
+
